@@ -1,2 +1,2 @@
 // eslint-disable-next-line prettier/prettier
-import '../css/test.css'
+import '../css/global.css'

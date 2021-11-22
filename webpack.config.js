@@ -46,7 +46,7 @@ Encore.setPublicPath('/assets')
 |
 */
 Encore.addEntry('app', './resources/js/app.js')
-Encore.addEntry('test', './resources/js/test.js')
+Encore.addEntry('global', './resources/js/global.js')
 
 /*
 |--------------------------------------------------------------------------
@@ -58,10 +58,10 @@ Encore.addEntry('test', './resources/js/test.js')
 | we must copy them manually.
 |
 */
-// Encore.copyFiles({
-//   from: './resources/images',
-//   to: 'images/[path][name].[hash:8].[ext]',
-// })
+Encore.copyFiles({
+  from: './resources/images',
+  to: 'images/[path][name].[hash:8].[ext]',
+})
 
 /*
 |--------------------------------------------------------------------------
