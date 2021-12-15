@@ -4,6 +4,7 @@ import UserValidator from 'App/Validators/UserValidator'
 
 export default class AuthController {
   public async register({ request, response }: HttpContextContract) {
+    console.log("object")
     const payload = await request.validate(UserValidator)
     await User.create(payload)
     response.redirect('/login')
